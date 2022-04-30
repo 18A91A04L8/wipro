@@ -1,0 +1,83 @@
+package practice2;
+public class student1 
+{
+	private static int stId=1001;
+	private String stName;
+	//private Address stAdd;
+	private int[] stMarks;
+	private int stTotal;
+	private int stAvg;
+	private String stGrade;
+	
+	public student1() {
+		stId++;
+	}
+	public int getStId() {
+		return stId;
+	}
+	public void setStId(int stId) {
+		this.stId = stId;
+	}
+	public String getStName() {
+		return stName;
+	}
+	public void setStName(String stName) {
+		this.stName = stName;
+	}
+	public int[] getStMarks() {
+		return stMarks;
+	}
+	public void setStMarks(int[] stMarks) {
+		this.stMarks = stMarks;
+	}
+	public int getStTotal() {
+		return stTotal;
+	}
+	public void setStTotal(int stTotal) {
+		this.stTotal = stTotal;
+	}
+	public int getStAvg() {
+		return stAvg;
+	}
+	public void setStAvg(int stAvg) {
+		this.stAvg = stAvg;
+	}
+	public String getStGrade() {
+		return stGrade;
+	}
+	public void setStGrade(String stGrade) {
+		this.stGrade = stGrade;
+	}
+	
+	public int  calculateTotal()
+	{
+		int t=0;
+		for(int m : stMarks)
+		{
+			t += m;
+		}
+		return t;
+	}
+	
+	public int calculateAverage()
+	{
+		return this.calculateTotal()/this.stMarks.length;
+	}
+	
+	public String calculateGrade()
+	{
+	  if(this.stMarks[0]>=35 && this.stMarks[1]>=35 && this.stMarks[2]>=35)	
+	  {	  
+		if(this.calculateAverage()>=60)
+			return "First Class";
+		else if(this.calculateAverage()>=50 && this.calculateAverage()<60)
+			return "Second Class";
+		else if(this.calculateAverage()>=35 && this.calculateAverage()<50)
+			return "Third Class";
+		else
+			return "Failed";
+	  }
+	  else
+		  return "Failed in subject";
+	}
+}
