@@ -1,0 +1,92 @@
+package Main;
+
+
+
+public class Engine {
+	String modelno,compratio,curenttype,enginetype;
+	int displacement,maxpower,maxrpm,maxtorque,weight,cylinder,voltage;
+	Engine(String modelno){
+		this.modelno=modelno;
+	}
+	public String getEnginetype() {
+		return enginetype;
+	}
+	public void setEnginetype(String enginetype) {
+		this.enginetype = enginetype;
+	}
+	public String getModelno() {
+		return modelno;
+	}
+	public void setModelno(String modelno) {
+		this.modelno = modelno;
+	}
+	public String getCompratio() {
+		return compratio;
+	}
+	public void setCompratio(String compratio) {
+		this.compratio = compratio;
+	}
+	public String getCurenttype() {
+		return curenttype;
+	}
+	public void setCurenttype(String curenttype) {
+		this.curenttype = curenttype;
+	}
+	public int getDisplacement() {
+		return displacement;
+	}
+	public void setDisplacement(int displacement) {
+		this.displacement = displacement;
+	}
+	public int getMaxpower() {
+		return maxpower;
+	}
+	public void setMaxpower(int maxpower) {
+		this.maxpower = maxpower;
+	}
+	public int getMaxrpm() {
+		return maxrpm;
+	}
+	public void setMaxrpm(int maxrpm) {
+		this.maxrpm = maxrpm;
+	}
+	public int getMaxtorque() {
+		return maxtorque;
+	}
+	public void setMaxtorque(int maxtorque) {
+		this.maxtorque = maxtorque;
+	}
+	public int getWeight() {
+		return weight;
+	}
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+	public int getCylinder() {
+		return cylinder;
+	}
+	public void setCylinder(int cylinder) {
+		this.cylinder = cylinder;
+	}
+	public int getVoltage() {
+		return voltage;
+	}
+	public void setVoltage(int voltage) {
+		this.voltage = voltage;
+	}
+	void showSpecs() {
+		System.out.println("Engine type :"+enginetype);
+		System.out.println("Model No :"+modelno);
+		System.out.println("Weight:"+weight);
+		System.out.println("Max power :"+maxpower);
+		System.out.println("Max Torque :"+maxtorque);
+		System.out.println("Max RPM :"+maxrpm);
+		System.out.println("Cylinder :"+cylinder);
+		System.out.println("Displacement :"+displacement);
+		System.out.println("Current type :"+curenttype);
+		System.out.println("Voltage :"+voltage);
+	}
+	
+	
+
+}

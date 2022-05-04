@@ -1,0 +1,29 @@
+package Main;
+
+
+
+public class Diesel extends Engine {
+
+	Diesel(String modelno) {
+		super(modelno);
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Diesel d=new Diesel("D1300");
+		d.setCompratio("17.6:1");
+		d.setCurenttype("NA");
+		d.setCylinder(4);
+		d.setDisplacement(1248);
+		d.setEnginetype("Diesel");
+		d.setMaxpower(67);
+		d.setMaxrpm(6000);
+		d.setMaxtorque(200);
+		d.setModelno("D1300");
+		d.setWeight(111);
+		d.showSpecs();
+		
+
+	}
+}

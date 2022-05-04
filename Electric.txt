@@ -1,0 +1,32 @@
+package Main;
+
+
+public class Electric extends Engine {
+
+	Electric(String modelno) {
+		super(modelno);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Electric e=new Electric("88");
+		
+		e.setCurenttype("AC");
+		
+		
+		e.setEnginetype("Electric");
+		e.setMaxpower(88);
+		e.setMaxrpm(15000);
+		e.setMaxtorque(220);
+		e.setModelno("88");
+		e.setWeight(45);
+		
+		e.setVoltage(360);
+		e.showSpecs();
+		
+
+	}
+}

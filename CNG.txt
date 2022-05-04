@@ -1,0 +1,28 @@
+package Main;
+
+
+public class CNG extends Engine {
+
+	CNG(String modelno) {
+		super(modelno);
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CNG c=new CNG("C1000");
+		c.setCompratio("10.5:1");
+		c.setCurenttype("NA");
+		c.setCylinder(4);
+		c.setDisplacement(998);
+		c.setEnginetype("CNG");
+		c.setMaxpower(43);
+		c.setMaxrpm(6000);
+		c.setMaxtorque(78);
+		c.setModelno("C1000");
+		c.setWeight(93);
+		c.showSpecs();
+		
+
+	}
+}

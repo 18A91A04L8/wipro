@@ -1,0 +1,29 @@
+package Main;
+
+
+public class Petrol extends Engine{
+
+	Petrol(String modelno) {
+		super(modelno);
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Petrol p=new Petrol("P1000");
+		p.setCompratio("11.0:1");
+		p.setCurenttype("NA");
+		p.setCylinder(3);
+		p.setDisplacement(996);
+		p.setEnginetype("Petrol");
+		p.setMaxpower(50);
+		p.setMaxrpm(6000);
+		p.setMaxtorque(90);
+		p.setModelno("P1000");
+		p.setWeight(75);
+		p.showSpecs();
+		
+
+	}
+
+}
